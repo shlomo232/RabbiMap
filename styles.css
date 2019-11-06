@@ -1,0 +1,71 @@
+.marker{
+    border:1px solid black;
+    background:white;
+    white-space: nowrap;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0); 
+    -moz-transform: translate3d(-50%, -50%, 0);  
+    transform: translate3d(-50%, -50%, 0); 
+}
+.circle {
+    background-color:red;
+    border:1px solid black;    
+    height:8px;
+    width:8px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    transform: translate3d(-50%, -50%, 0); 
+}
+#dialog {
+    display:none;
+}
+
+    .onoffswitch {
+        position: relative; width: 40px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        display:inline-block;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #999999; border-radius: 14px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 16px; padding: 0; line-height: 16px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "";
+        padding-left: 10px;
+        background-color: #34A7C1; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "";
+        padding-right: 10px;
+        background-color: #34A7C1; color: #999999;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        display: block; width: 12px; margin: 2px;
+        background: #FFFFFF;
+        position: absolute; top: 0; bottom: 0;
+        right: 20px;
+        border: 2px solid #999999; border-radius: 14px;
+        transition: all 0.3s ease-in 0s; 
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px; 
+    }

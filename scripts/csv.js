@@ -77,7 +77,7 @@
     	var newObj;
     	for (var i = 1; line = CSVArray[i]; i++) {
     		newObj = {};
-    		for (var j = 1; entry = CSVArray[i][j]; j++) {
+    		for (var j = 0; entry = CSVArray[i][j]; j++) {
     			newObj[headers[j]] = entry;
     		}
     		if (Object.keys(newObj).length) {

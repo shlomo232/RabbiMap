@@ -36,8 +36,8 @@ Akko;32.92201;35.06966;Abba of Acre, Rash of Sens, Isaac ben Shmuel of Acre
 Timnah;31.785;34.9111;Shimon haTemani
 Tzeredah;32.054208;35.056643;Yossi ben Yoezer
 Arbel;32.8152;35.4837;Nitai haArbeli, Kohanei Yeshua
-Arabeh (near Sakhnin);32.85099;35.33869;Kohanei Petachya, R. Hanina ben Dosa, Yohanan ben Zakkai
-Kfar Otnai (near Megiddo);32.5732;35.17329;R. Gamaliel II
+Arabeh;32.85099;35.33869;Kohanei Petachya, R. Hanina ben Dosa, Yohanan ben Zakkai
+Kfar Otnai;32.5732;35.17329;R. Gamaliel II
 Pekiin;32.9774;35.3353;R. Yehoshua
 Bnei Brak (old);32.036;34.8275;R. Akiva
 Lod;31.9537;34.9009;R. Eliezer, Akiva, Pinchas ben Yair, Yehoshua ben Levi, Aha
@@ -54,14 +54,14 @@ Nisibis;37.0729;41.2181;Yehudah ben Beteira
 Alexandria;31.1997;29.9078;Yochanan HaSandlar, Shemaya, Avtalyon
 Sajur;32.94204;35.34124;Shimon Shezuri
 Beit Shearim;32.70377;35.12936;Judah Hanasi
-Kfar Dvorah (golan);33.04552;35.66614;Elazar Hakappar
+Kfar Dvorah;33.04552;35.66614;Elazar Hakappar
 Caesarea;32.5031;34.8955;Bar Kappara, R. Abbahu
 Tiberias;32.77651;35.54429;R. Banaah, Hiyya the Great, Elazar ben Pedat, Yochanan, Hezekiah, Ammi, Assi, Zeira, Levi, Yirmiyah
 Tyre;33.2722;35.1951;R. Yaakov bar Idi
 Yafo;32.05368;34.75244;R. Aba demin Yafo
 Haifa;32.82874;34.98653;Avdimi demin Haifa, Yechiel of Paris
 Katzrin;32.98869;35.70451;R. Avin
-Nawa Syria;32.8909;36.0416;R. Tanhuma
+Nawa;32.8909;36.0416;R. Tanhuma
 Nehardea;33.37861;43.7158;Shmuel, R. Simlai, Shela, Rabbah bar Avuha, Nahman, Sheshet, Amemar
 Sura;31.88333;44.45;Rav, Rabbah bar Rav Huna, R. Ashi, Ravina (I & II), Yeimar. Yehudai Gaon, Natronai Gaon, Amram Gaon, Samuel ben Hofni
 Kafri;31.8045;44.4509;Mar Ukva, R. Chisda
@@ -73,11 +73,11 @@ Basra;30.502;47.8153;R. Yirmiyah Rabbah
 Mahoza;33.1;44.58333;Rava, R. Nachman bar Yitzchak
 Tushpa;38.4996;43.3461;Rabbah Tosafaah
 Baghdad;33.3401;44.3904;Sherira Gaon, Hai Gaon, Ben Ish Hai
-Kairouan, Tunisia;35.6787;10.103;Chushiel ben Elchanan, Rabbeinu Hananel, Nissim Gaon
+Kairouan;35.6787;10.103;Chushiel ben Elchanan, Rabbeinu Hananel, Nissim Gaon
 Granada;37.179;-3.5961;Shmuel haNagid
 Fustat/Cairo;30.0078;31.24;Shemariah ben Elhanan, Rambam, Radbaz, Eliezer ben Elijah Ashkenazi
 Toledo;39.8561;-4.0237;Yehuda haLevi, Ramah, ibn Daud, Rabbeinu Yonah, Rosh
-Tudela, Spain;42.06336;-1.6056;Ibn Ezra
+Tudela;42.06336;-1.6056;Ibn Ezra
 Zaragoza;41.65477;-0.87968;Ritva, Bahya ibn Paquda, Bahya ben Asher, ibn Janah
 Lucena;37.40896;-4.48459;Ri Migash, Ibn Ghiyat
 Soria, Spain;41.766667;-2.466667;Yosef Albo
@@ -119,7 +119,7 @@ Canterbury;51.2794;1.0804;Aaron of Canterbury
 London;51.5135;-0.087;Jacob ben Judah of London
 Lincoln;53.23583;-0.53864;Berechiah de Nicole
 York;53.9589;-1.0801;Yom Tov of York
-Maribor, Slovenia;46.5583;15.6474;Terumat haDeshen
+Maribor;46.5583;15.6474;Terumat haDeshen
 Vienna;48.2089;16.3715;Or Zarua, Avigdor Cohen of Vienna, Isaac Tyrnau
 Rome;41.8979;12.4708;Abba bar Zemina, Aruch, Shibbolei haLekket, Sforno
 Chambery;45.5652;5.9226;Joseph Colon Trabotto
@@ -128,9 +128,9 @@ Siponto;41.6122;15.897;Yitzchak ben Malchitzedek
 Venice;45.4372;12.3357;Rid, Simone Luzzato
 Fez;34.0632;-4.9737;Rif, Yaakov Hagiz
 Cordova;37.8859;-4.775;Dunash ibn Labrat
-Cabes, Tunisia;33.883;10.1166;Samuel ben Yaakov ibn Jam
+Cabes;33.883;10.1166;Samuel ben Yaakov ibn Jam
 Lisbon;38.7122;-9.12802;Abarbanel
-Tachov, Czech;49.79524;12.63367;Moses Taku
+Tachov;49.79524;12.63367;Moses Taku
 Prague;50.0878;14.4227;Isaac ben Jacob haLavan, Tosafot Yom Tov, Shelah, Maharal, Kli Yekar, Levush, Noda beYehudah
 Silivri;41.0833;28.25;Hillel ben Eliyakim
 Fasuta;33.0484;35.30979;Kohanei Harim
@@ -153,7 +153,7 @@ Kochav haYarden;32.59559;35.52153;Kohanel Gamul
 Deir Hana;32.8624;35.3666;Kohanei Yachin
 Tel Tzalmon;32.8849;35.3795;Kohanei Delayahu
 Hamat Ariach;32.76636;35.55057;Kohanei Maazyahu
-Lviv;49.836;24.0193;Pnei Yehoshua, Sema (Sefer Meirat Einayim), Kli Yekar, Maharam, Pri Megadim
+Lemberg;49.836;24.0193;Pnei Yehoshua, Sema (Sefer Meirat Einayim), Kli Yekar, Maharam, Pri Megadim
 Amsterdam;52.372;4.8991;Jacob Abendana, Ramchal
 Hamburg;53.5475;9.9968;Abraham ben Joseph ha-Levi, Isaac Bernays
 Montecchio Maggiore;45.5024;11.4133;Judah Messer Leon
@@ -168,12 +168,12 @@ Livorno;43.5523;10.3109;Hida, Pri Hadash
 Medzhybizh;49.4333;27.4166;Baal Shem Tov
 Mosul;36.3424;43.1297;Asenath Barzani
 Chelm;51.1333;23.4833;Eliyahu Baal Shem of Chelm
-Eisenstadt, Austria;47.85;16.517;Panim Meirot, Imrei Esh
+Eisenstadt;47.85;16.517;Panim Meirot, Imrei Esh
 Berlin;52.5156;13.3939;Korban haEdah, David Tzvi Hoffmann
-Altona, Hamburg;53.55;9.9333;Yaakov Emden, Yonatan Eybeschutz, Aruch LaNer
-Kalisz, Poland;51.767;18.0833;Magen Avraham
+Hamburg;53.55;9.9333;Yaakov Emden, Yonatan Eybeschutz, Aruch LaNer
+Kalisz;51.767;18.0833;Magen Avraham
 Volozhin;54.0843;26.5278;Shaagat Aryeh, Netziv, Chaim Volozhin, Chaim Brisker
-Metz, France;49.1168;6.1773;Shaagat Aryeh
+Metz;49.1168;6.1773;Shaagat Aryeh
 Sofia;42.6954;23.3231;Yosef Ibn Ezra
 Krakow;50.0634;19.9381;Remah, Beer Heitev, Bach
 Avlona;40.467;19.483;David ben Judah Messer Leon
@@ -182,24 +182,24 @@ Poznan;52.4077;16.9356;Maharal
 Padua;45.4062;11.8774;Ramchal
 Lublin;51.2482;22.5674;Maharshal, Maharam (Lublin), Hozeh meLublin, Tzadok haKohen
 Ostroh;50.3282;26.5215;Maharsha, Taz
-Ohrid, Macedonia;41.1187;20.8045;Judah Leon Mosconi
+Ohrid;41.1187;20.8045;Judah Leon Mosconi
 Ein Zeitun;32.987;35.492;Moshe ben Machir
 Mantua;45.1576;10.7945;Minchat Shai
 Damascus;33.5113;36.3115;Josiah Pinto
-Sharab, Yemen;13.7831;43.8858;Shalom Sharabi
+Sharab;13.7831;43.8858;Shalom Sharabi
 Karlsruhe;49.0033;8.4018;Korban Netanel
 Frankfurt;50.1144;8.6853;Nathan Adler, Shimshon Refael Hirsch
 Ternopil;49.5666;25.6;Minchat Chinuch
 Meknes;33.8974;-5.5663;Refael Berdugo
 Baltimore;39.2904;-76.6119;Avraham Rice, Yaakov Ruderman, Yaakov Kamenetsky
 Bykhov;53.51666;30.25;David Luria
-Edgemere NY;40.5961;-73.7685;Charles Chavel
-Wurzburg, Germany;49.7941;9.9329;Avraham Bing
-New York, NY;40.7547;-73.9859;Moshe Feinstein, Yitzchak Hutner, Menachem Mendel Schneerson
-Lakewood, NJ;40.0949;-74.2147;Aharon Kotler
-Ungvar, Hungary;48.624;22.295;Kitzur Shulchan Aruch
+Edgemere;40.5961;-73.7685;Charles Chavel
+Wurzburg;49.7941;9.9329;Avraham Bing
+New York;40.7547;-73.9859;Moshe Feinstein, Yitzchak Hutner, Menachem Mendel Schneerson
+Lakewood;40.0949;-74.2147;Aharon Kotler
+Ungvar;48.624;22.295;Kitzur Shulchan Aruch
 Vilna;54.6808;25.2873;Vilna Gaon, Isaac Elijah Landau, Chaim Ozer Grodinski, Rashash
-Stryi, Ukraine;49.25;23.85;Ketzot haHoshen
+Stryi;49.25;23.85;Ketzot haHoshen
 Dubno;50.393;25.735;Dubner Maggid
 Torun;53.022;18.611;Tzvi Hirsch Kalischer
 Boskovice;49.4875;16.66;Machatzit haShekel
@@ -208,25 +208,25 @@ Danzig;54.3527;18.655;Tiferet Yisrael
 Bucharest;44.431;26.1013;Malbim
 Rhodes;36.438;28.2341;Malki baKodesh
 Konigsberg;54.7104;20.518;HaKtav vehaKabbalah
-Silistria, Bulgaria;44.117;27.267;Pele Yoetz
-Svätý Jur;48.252;17.216;Maharam Schick
+Silistria;44.117;27.267;Pele Yoetz
+Yeregin;48.252;17.216;Maharam Schick
 Bialystok;53.135;23.146;Meshech Hochma
 Dvinsk;55.875;26.536;Meshech Hochma, Rogachover
-Bratislava;48.1433;17.1105;Chatam Sofer, Ktav Sofer
+Pressburg;48.1433;17.1105;Chatam Sofer, Ktav Sofer
 Navahrudak;53.583;25.817;Aruch haShulchan
 Kovno;54.901;23.9109;Yitzchak Elchanan Spektor, Isser Zalman Meltzer
-Montreux, Switzerland;46.4363;6.9127;Sridei Esh
+Montreux;46.4363;6.9127;Sridei Esh
 Salantai;56.067;21.567;Yisroel Salanter
 Grodno;53.667;23.833;Shimon Shkop
 Telz;55.983;22.25;Shimon Shkop
-Baranavichy (Novardok);53.133;26.167;Elchanan Wasserman
+Novardok;53.133;26.167;Elchanan Wasserman
 Radun;54.048;24.996;Chofetz Chaim
 Brisk;52.135;23.657;Beis haLevi, Chaim Brisker
 Boston;42.3343;-71.1212;Joseph Dov Soloveitchik
 Bielsk Podlaski;52.767;23.2;Yefeh Einayim
 Mezrich;50.657;26.864;Maggid of Mezrich
 Hanipol;50.454;26.895;Zusha
-Leżajsk, Poland;50.267;22.417;Noam Elimelech
+Lizhensk;50.267;22.417;Noam Elimelech
 Kotzk;51.65;22.45;Kotzker Rebbe
 Bratslav;48.815;28.944;Nachman meBreslov
 Piasetzno;52.067;21.017;Kalonymus Kalman Shapira, Simcha Bunim
@@ -239,7 +239,7 @@ Lubavitch;54.833;30.967;Lubavitcher Hassidim
 Amshinov;51.974;20.527;Amshinover Hassidim
 Modzitz;51.567;21.861;Modzitz Hassidim
 Izhbitza;50.883;23.167;Mei haShiloach
-Radzyń Podlaski;51.767;22.617;Radzyner Hassidim
+Radzyn Podlaski;51.767;22.617;Radzyner Hassidim
 Bobov;49.7;20.933;Bobov Hassidim
 Alon Shevut;31.6559;35.1264;Aharon Lichtenstein
 Bnei Brak;32.0866;34.8374;Chazon Ish, Elazar Shach, Shmuel Wosner, Chaim Kanievsky
@@ -249,3 +249,5 @@ Beit El (modern);31.9424;35.2232;Shlomo Aviner, Zalman Baruch Melamed
 Chicago;41.8341;-87.7321;Aharon Soloveitchik
 Yavoriv;49.947;23.393;Metzudot
 Pinsk;52.117;26.1;Torah Temimah
+Sanaa;15.3554;44.2142;Yihyah Kafih
+Taiz;13.578889;44.02194;Shalom Shabazi

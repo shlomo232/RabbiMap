@@ -14,29 +14,28 @@
     <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="scripts/csv.js"></script>
 
-<style>
-.marker{
-    border:1px solid black;
-    background:white;
-    white-space: nowrap;
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    -webkit-transform: translate3d(-50%, -50%, 0); 
-    -moz-transform: translate3d(-50%, -50%, 0);  
-    transform: translate3d(-50%, -50%, 0); 
-}
-#dialog {
-    display:none;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 
 </head>
 <body  dir=ltr >
 
 <table border=0 width="100%" height="100%" cellpadding=0>
 <tr><td colspan=2>
-    <span style="float:left"><b>RabbiMap</b>: Where the rabbis and other great figures in Jewish history lived. <a href="javascript:displayAbout()">Click for explanation</a></span>
+    <span style="float:left">
+        <b>RabbiMap</b>: Where the rabbis and other great figures in Jewish history lived. <a href="javascript:displayAbout()">Click for explanation</a>
+    </span>
+    <span style="float:right">
+        Display style:   <b>Labels</b>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" unchecked onClick="changeMode()">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+        <b>Dots</b>
+    </span>
+
 </td></tr>
 <tr><td colspan=2 height=1><hr noshade></td></tr>
 <tr>
@@ -51,15 +50,6 @@
 </div>
 
 <script>
-	var mymap = L.map('mapid').setView([44.626,16.708], 5);
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox.streets'
-	}).addTo(mymap);
-
     var dataImport;
     $.ajax({
             url: './data.csv',
@@ -71,16 +61,53 @@
             }
     });
 
-    for (var i = 0; i < dataImport.length; i++) {
-        L.marker(
-            [ dataImport[i].Lat, dataImport[i].Long ],
-            {icon: L.divIcon({ className: 'my-div-icon',iconSize: null,html:'<div class=marker>'+dataImport[i].Names+'</div>'}) }
-        ).addTo(mymap);
+    function displayLabels() {
+        layerGroup.clearLayers();
+        for (var i = 0; i < dataImport.length; i++) {
+            L.marker(
+                [ dataImport[i].Lat, dataImport[i].Long ],
+                {icon: L.divIcon({ className: 'my-div-icon',iconSize: null,html:'<div class=marker>'+dataImport[i].Place+": "+dataImport[i].Names+'</div>'}) }
+            ).addTo(layerGroup);//addTo(mymap);
+        }
+    }
+    function displayDots() {
+        layerGroup.clearLayers();
+        for (var i = 0; i < dataImport.length; i++) {
+            var popuptext='<div class=marker>'+dataImport[i].Place+": "+dataImport[i].Names+'</div>';
+            L.marker(
+                [ dataImport[i].Lat, dataImport[i].Long ],
+                {icon: L.divIcon({ className: 'my-div-icon',iconSize: null,html:'<div class=circle></div>'}) }
+            ).addTo(layerGroup)
+            .bindPopup(popuptext)
+            .on('mouseover', function (e) { this.openPopup(); });
+        }
+    }
+    function changeMode() {
+        var onoffswitch = document.getElementById("myonoffswitch");
+        if (onoffswitch.checked == true){
+            displayDots();
+        } else {
+            displayLabels();
+        }
     }
 
     function displayAbout() {
-        alert("About this site:<br>When we learn Torah, a lot of our time is spent figuring out what exactly the great rabbis were thinking. But of course, Torah thoughts were not the only things on the rabbis' minds. Like people everywhere, they had to deal with many mundane concerns. We can understand many of these concerns by knowing exactly where they lived. For example: What was the weather like and what clothes did they wear? What did they eat? What did they see when they looked out the window? Which roads did they follow to visit their colleagues? Knowing the answers to these questions can make the rabbis feel more real to us, and occasionally provide greater insight into what they are saying.<br>To make this map, I researched numerous tannaim, amoraim, rishonim, achronim, and Biblical figures, and figured out the place (or occasionally several places) where they lived for most of their lives. In cases where they moved around multiple times (very common among the achronim!), I tried to choose the place where they had the most impact, or in connection with which they are best known.<br>The research I did to create this map was superficial, not deep. If you caught an error, or noticed a name which I left off the map, please contact me at ADDRESS@gmail.com<br>Enjoy scrolling around the map, and I hope you find it interesting and enlightening!!");
+        alert("About this site:<br>When we learn Torah, a lot of our time is spent figuring out what exactly the great rabbis were thinking. But of course, Torah thoughts were not the only things on the rabbis' minds. Like people everywhere, they had to deal with many mundane concerns. We can understand many of these concerns by knowing exactly where they lived. For example: What was the weather like and what clothes did they wear? What did they eat? What did they see when they looked out the window? Which roads did they follow to visit their colleagues? Knowing the answers to these questions can make the rabbis feel more real to us, and occasionally provide greater insight into what they are saying.<br>To make this map, I researched numerous tannaim, amoraim, rishonim, achronim, and Biblical figures, and figured out the place (or occasionally several places) where they lived for most of their lives. In cases where they moved around multiple times (very common among the achronim!), I tried to choose the place where they had the most impact, or in connection with which they are best known.<br>To save space on the map, I omitted the \"R'\" prefix for rishonim and achronim, but kept it for tannaim and amoraim.<br>The research I did to create this map was superficial, not deep. If you caught an error, or noticed a name which I left off the map, please contact me at [email.png]<br>Enjoy scrolling around the map, and I hope you find it interesting and enlightening!!");
     }
+
+    var usedots=0;
+	var mymap = L.map('mapid').setView([44.626,16.708], 5);
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+    var layerGroup = L.layerGroup().addTo(mymap);
+    document.getElementById("myonoffswitch").checked = false;
+    displayLabels();
+
 </script>
 
 </body>
