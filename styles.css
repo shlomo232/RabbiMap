@@ -10,7 +10,6 @@
     transform: translate3d(-50%, -50%, 0); 
 }
 .circle {
-    background-color:red;
     border:1px solid black;    
     height:8px;
     width:8px;
@@ -19,6 +18,25 @@
     -moz-border-radius:50%;
     transform: translate3d(-50%, -50%, 0); 
 }
+.cB {
+    background-color:red;
+}
+.cT {
+    background-color:yellow;
+}
+.cAm {
+    background-color:lime;
+}
+.cR {
+    background-color:blue;
+}
+.cAh {
+    background-color:silver;
+}
+.cM {
+    background-color:black;
+}
+
 #dialog {
     display:none;
 }
