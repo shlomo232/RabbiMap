@@ -3,8 +3,9 @@
 }
 
 .em-modal-text {
-	margin-bottom: 10px;
-    text-align: left
+	margin-bottom: 5px;
+    text-align: left;
+    overflow: auto
 }
 
 .em-modal-footer {
@@ -39,7 +40,7 @@
 	transform: translate(-50%, -50%);
 	max-height: 90%;
 	background: #fff;
-	padding: 10px;
+	padding: 3px;
 	min-height: 0!important;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, .7);
 	text-align: center;

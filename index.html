@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- TODO:
 Make labels wrap intelligently
+Make "about" dialog scroll not overflow
+Make map fit to bottom of screen
 -->
 <html>
 <head>
@@ -23,37 +25,11 @@ Make labels wrap intelligently
 </head>
 <body  dir=ltr >
 
-<table border=0 width="100%" height="100%" cellpadding=0>
-<tr><td colspan=2>
-    <span style="float:left">
-        <b>RabbiMap</b>: Where the rabbis and other great figures in Jewish history lived. <a href="javascript:toggleModal()">Click for explanation</a>
-
-
-    <div class="em_wrap_common_public em_wrap_common">
-      <div class="modal em-questionnire-container" style="display: none;position: absolute;width: 100%;">
-        <div class="overlay"></div>
-        <div class="modal_content em-questionnaire-content">
-          <span class="modal_close" style="float: right">X</span>
-          <div class="em-modal-header">
-            <h2 class="title">About this site:</h3></div>
-          <div class="em-modal-text">
-When we learn Torah, a lot of our time is spent figuring out what exactly the great rabbis were thinking. But of course, Torah thoughts were not the only things on the rabbis' minds. Like people everywhere, they had to deal with many mundane concerns. We can understand many of these concerns by knowing exactly where they lived. For example: What was the weather like and what clothes did they wear? What did they eat? What did they see when they looked out the window? Which roads did they follow to visit their colleagues? Knowing the answers to these questions can make the rabbis feel more real to us, and occasionally provide greater insight into what they are saying.<p>To make this map, I researched numerous tannaim, amoraim, rishonim, achronim, and Biblical figures, and figured out the place (or occasionally several places) where they lived for most of their lives. In cases where they moved around multiple times (very common among the achronim!), I tried to choose the place where they had the most impact, or in connection with which they are best known.<p>The dots have different colors based on the period of the individuals who lived there: <b><font color="red">Biblical</font>, <font color="yellow">tannaim</font>, <font color="lime">amoraim</font>, <font color="blue">rishonim/geonim</font>, <font color="silver">acharonim</font>, multiple periods</font></b>.<p>The research I did to create this map was superficial, not deep. If you caught an error, or noticed a name which I left off the map, please contact me at:<br><img src="email.png"><p>Enjoy scrolling around the map, and I hope you find it interesting and enlightening!!
-          </div>
-          <div class="em-modal-footer">
-            <button id="modal_continue" class="em-btn em-btn-lg em-btn-secondary em-modal-btn">
-                    Ok
-                </button>
-          </div>
-        </div>
-      </div>
-          </div>
-        </div>
-      </div>
-
-
-    </span>
+<table border=0 width="100%" height="100%" cellpadding=0 style="min-height: 100vh;">
+<tr><td>
+    <b>RabbiMap</b>: Where the rabbis and other great figures in Jewish history lived. <a href="javascript:toggleModal()">Click for explanation</a>
     <span style="float:right">
-        Display style:   <b>Dots</b>
+        Display style: <b>Dots</b>
         <div class="onoffswitch">
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" unchecked onClick="changeMode()">
             <label class="onoffswitch-label" for="myonoffswitch">
@@ -63,19 +39,33 @@ When we learn Torah, a lot of our time is spent figuring out what exactly the gr
         </div>
         <b>Labels</b>
     </span>
-
+<hr noshade>
 </td></tr>
-<tr><td colspan=2 height=1><hr noshade></td></tr>
-<tr>
-    <td>
-        <div id="mapid" style="width:100%; height: 500px;"></div>
-    </td>
-</tr>
+<tr><td>
+    <div id="mapid" style="width:100%; height:500px;"></div>
+</td></tr>
 </table>
  
 <div id="dialog" title="Basic dialog">
   <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
 </div>
+
+
+<div class="em_wrap_common_public em_wrap_common">
+    <div class="modal em-questionnire-container" style="display:none; position: absolute; width: 100%;">
+        <div class="overlay"></div>
+        <div class="modal_content em-questionnaire-content">
+          <span class="modal_close" style="float: right">X</span>
+          <div class="em-modal-header"><h2 class="title">About this site:</h2></div>
+          <div class="em-modal-text">When we learn Torah, a lot of our time is spent figuring out what exactly the great rabbis were thinking. But of course, Torah thoughts were not the only things on the rabbis' minds. Like people everywhere, they had to deal with many mundane concerns. We can understand many of these concerns by knowing exactly where they lived. For example: What was the weather like and what clothes did they wear? What did they eat? What did they see when they looked out the window? Which roads did they follow to visit their colleagues? Knowing the answers to these questions can make the rabbis feel more real to us, and occasionally provide greater insight into what they are saying.<p>To make this map, I researched numerous tannaim, amoraim, rishonim, achronim, and Biblical figures, and figured out the place (or occasionally several places) where they lived for most of their lives. In cases where they moved around multiple times (very common among the achronim!), I tried to choose the place where they had the most impact, or in connection with which they are best known.<p>The dots have different colors based on the period of the individuals who lived there: <b><font color="red">Biblical</font>, 
+<span style="background-color: green"><font color="yellow">tannaim</font></span>, <font color="lime">amoraim</font>, <font color="blue">rishonim/geonim</font>, <font color="silver">acharonim</font>, multiple periods</font></b>.<p>The research I did to create this map was superficial, not deep. If you caught an error, or noticed a name which I left off the map, please contact me at: <img src="email.png" align=top width=150 height=20><p>Enjoy scrolling around the map, and I hope you find it interesting and enlightening!!</div>
+          <div class="em-modal-footer"><button id="modal_continue" class="em-btn em-btn-lg em-btn-secondary em-modal-btn">Ok</button></div>
+        </div>
+      </div>
+          </div>
+    </div>
+</div>
+
 
 <script>
     var dataImport;
