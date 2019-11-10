@@ -2,7 +2,6 @@
 <!-- TODO:
 Make labels wrap intelligently
 Make "about" dialog scroll not overflow
-Make map fit to bottom of screen
 -->
 <html>
 <head>
@@ -12,21 +11,17 @@ Make map fit to bottom of screen
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="scripts/csv.js"></script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="modal.css">
-
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
-<body  dir=ltr >
 
-<table border=0 width="100%" height="100%" cellpadding=0 style="min-height: 100vh;">
-<tr><td>
+<body  dir=ltr  class="holy-grail">
+<div width="100%">
     <b>RabbiMap</b>: Where the rabbis and other great figures in Jewish history lived. <a href="javascript:toggleModal()">Click for explanation</a>
     <span style="float:right">
         Display style: <b>Dots</b>
@@ -39,18 +34,11 @@ Make map fit to bottom of screen
         </div>
         <b>Labels</b>
     </span>
-<hr noshade>
-</td></tr>
-<tr><td>
-    <div id="mapid" style="width:100%; height:500px;"></div>
-</td></tr>
-</table>
- 
-<div id="dialog" title="Basic dialog">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    <hr noshade>
 </div>
+<div id="mapid" class="holy-grail-body"></div>
 
-
+<!-- Modal dialog for "about" window" -->
 <div class="em_wrap_common_public em_wrap_common">
     <div class="modal em-questionnire-container" style="display:none; position: absolute; width: 100%;">
         <div class="overlay"></div>
@@ -84,8 +72,8 @@ Make map fit to bottom of screen
         for (var i = 0; i < dataImport.length; i++) {
             L.marker(
                 [ dataImport[i].Lat, dataImport[i].Long ],
-                {icon: L.divIcon({ className: 'my-div-icon',iconSize: null,html:'<div class=marker>'+dataImport[i].Place+": "+dataImport[i].Names+'</div>'}) }
-            ).addTo(layerGroup);//addTo(mymap);
+                {icon: L.divIcon({ className: 'my-div-icon',html:'<div class=wrapper><div class=label>'+dataImport[i].Place+": "+dataImport[i].Names+'</div></div>'}) } //iconSize: [300, 0],
+            ).addTo(layerGroup);
         }
     }
     function displayDots() {
@@ -98,12 +86,13 @@ Make map fit to bottom of screen
             else if (dataImport[i].Era=='R') circletext='<div class="circle cR"></div>'
             else if (dataImport[i].Era=='Ah') circletext='<div class="circle cAh"></div>'
             else circletext='<div class="circle cM"></div>'
-            var popuptext='<div class=marker>'+dataImport[i].Place+": "+dataImport[i].Names+'</div>';
+
+            var popuptext='<div class=popup>'+dataImport[i].Place+": "+dataImport[i].Names+'</div>';
             L.marker(
                 [ dataImport[i].Lat, dataImport[i].Long ],
                 {icon: L.divIcon({ className: 'my-div-icon',iconSize: null,html:circletext}) }
             ).addTo(layerGroup)
-            .bindPopup(popuptext)
+            .bindPopup(popuptext, { closeButton:false } )
             .on('mouseover', function (e) { this.openPopup(); });
         }
     }
