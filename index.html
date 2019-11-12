@@ -38,16 +38,15 @@ Make "about" dialog scroll not overflow
 </div>
 <div id="mapid" class="holy-grail-body"></div>
 
-<!-- Modal dialog for "about" window" -->
-<div class="em_wrap_common_public em_wrap_common">
-    <div class="modal em-questionnire-container" style="display:none; position: absolute; width: 100%;">
+<!-- Modal dialog for "about" window -->
+<div class="em_wrap_common">
+    <div class="modal" style="display:none; position:absolute; width: 100%;">
         <div class="overlay"></div>
-        <div class="modal_content em-questionnaire-content">
+        <div class="modal_content">
           <span class="modal_close" style="float: right">X</span>
-          <div class="em-modal-header"><h2 class="title">About this site:</h2></div>
-          <div class="em-modal-text">When we learn Torah, a lot of our time is spent figuring out what exactly the great rabbis were thinking. But of course, Torah thoughts were not the only things on the rabbis' minds. Like people everywhere, they had to deal with many mundane concerns. We can understand many of these concerns by knowing exactly where they lived. For example: What was the weather like and what clothes did they wear? What did they eat? What did they see when they looked out the window? Which roads did they follow to visit their colleagues? Knowing the answers to these questions can make the rabbis feel more real to us, and occasionally provide greater insight into what they are saying.<p>To make this map, I researched numerous tannaim, amoraim, rishonim, achronim, and Biblical figures, and figured out the place (or occasionally several places) where they lived for most of their lives. In cases where they moved around multiple times (very common among the achronim!), I tried to choose the place where they had the most impact, or in connection with which they are best known.<p>The dots have different colors based on the period of the individuals who lived there: <b><font color="red">Biblical</font>, 
-<span style="background-color: green"><font color="yellow">tannaim</font></span>, <font color="lime">amoraim</font>, <font color="blue">rishonim/geonim</font>, <font color="silver">acharonim</font>, multiple periods</font></b>.<p>The research I did to create this map was superficial, not deep. If you caught an error, or noticed a name which I left off the map, please contact me at: <img src="email.png" align=top width=150 height=20><p>Enjoy scrolling around the map, and I hope you find it interesting and enlightening!!</div>
-          <div class="em-modal-footer"><button id="modal_continue" class="em-btn em-btn-lg em-btn-secondary em-modal-btn">Ok</button></div>
+          <div><h2>About this site:</h2></div>
+          <div class="em-modal-text">When we learn Torah, a lot of our time is spent figuring out what exactly the great rabbis were thinking. But of course, Torah thoughts were not the only things on the rabbis' minds. Like people everywhere, they had to deal with many mundane concerns. We can understand many of these concerns by knowing exactly where they lived. For example: What was the weather like and what clothes did they wear? What did they eat? What did they see when they looked out the window? Which roads did they follow to visit their colleagues? Knowing the answers to these questions can make the rabbis feel more real to us, and occasionally provide greater insight into what they are saying.<p>To make this map, I researched numerous tannaim, amoraim, rishonim, achronim, and Biblical figures, and figured out the place (or occasionally several places) where they lived for most of their lives. In cases where they moved around multiple times (very common among the achronim!), I tried to choose the place where they had the most impact, or in connection with which they are best known.<p>The research I did to create this map was superficial, not deep. If you caught an error, or noticed a name which I left off the map, please contact me at: <img src="email.png" align=top width=150 height=20>. Enjoy scrolling around the map, and I hope you find it interesting and enlightening!!</div>
+<!--          <div class="em-modal-footer"><button id="modal_continue" class="em-btn em-btn-secondary em-modal-btn">Ok</button></div>-->
         </div>
       </div>
           </div>
@@ -72,9 +71,12 @@ Make "about" dialog scroll not overflow
         for (var i = 0; i < dataImport.length; i++) {
             L.marker(
                 [ dataImport[i].Lat, dataImport[i].Long ],
+  //              {icon: L.divIcon({ className: 'my-div-icon',html:'<div class=wrapper><div class=label>'+dataImport[i].Place+": "+dataImport[i].Names+'</div></div>'}) } //iconSize: [300, 0],
                 {icon: L.divIcon({ className: 'my-div-icon',html:'<div class=wrapper><div class=label>'+dataImport[i].Place+": "+dataImport[i].Names+'</div></div>'}) } //iconSize: [300, 0],
             ).addTo(layerGroup);
         }
+
+        legend.remove(mymap);
     }
     function displayDots() {
         layerGroup.clearLayers();
@@ -95,6 +97,7 @@ Make "about" dialog scroll not overflow
             .bindPopup(popuptext, { closeButton:false } )
             .on('mouseover', function (e) { this.openPopup(); });
         }
+        legend.addTo(mymap);
     }
     function changeMode() {
         var onoffswitch = document.getElementById("myonoffswitch");
@@ -113,7 +116,7 @@ Make "about" dialog scroll not overflow
       for (var i = 0; i < closeModalEls.length; i++) {
         closeModalEls[i].addEventListener('click', toggleModal);
       }
-      document.getElementById('modal_continue').addEventListener('click', toggleModal);
+//      document.getElementById('modal_continue').addEventListener('click', toggleModal);
       modalElm.querySelector('.overlay').addEventListener('click', toggleModal);
       document.addEventListener('keyup', escapeKeyExit);
     }
@@ -122,7 +125,7 @@ Make "about" dialog scroll not overflow
       for (var i = 0; i < closeModalEls.length; i++) {
         closeModalEls[i].removeEventListener('click', toggleModal);
       }
-      document.getElementById('modal_continue').removeEventListener('click', toggleModal);
+//      document.getElementById('modal_continue').removeEventListener('click', toggleModal);
       modalElm.querySelector('.overlay').removeEventListener('click', toggleModal);
     }
 
@@ -157,6 +160,14 @@ Make "about" dialog scroll not overflow
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		id: 'mapbox.streets'
 	}).addTo(mymap);
+
+    var legend = L.control({position: 'bottomright'});
+    legend.onAdd = function (mymap) {
+        var div = L.DomUtil.create('div', 'info legend');
+        div.innerHTML ='<div class="circle cB inline"></div>&nbsp;Biblical<p><div class="circle cT inline"></div>&nbsp;Tannaim<p><div class="circle cAm inline"></div>&nbsp;Amoraim<p><div class="circle cR inline"></div>&nbsp;Rishonim/geonim<p><div class="circle cAh inline"></div>&nbsp;Achronim<p><div class="circle cM inline"></div>&nbsp;Multiple eras';
+        return div;
+    };
+
     var layerGroup = L.layerGroup().addTo(mymap);
     document.getElementById("myonoffswitch").checked = false;
     displayDots();
