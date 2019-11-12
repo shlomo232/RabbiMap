@@ -136,9 +136,12 @@ Make "about" dialog scroll not overflow
       if (currentState === 'none') {
         modal.style.display = 'block';
         attachModalListeners(modal);
+        legend.remove(mymap);
       } else {
         modal.style.display = 'none';
         detachModalListeners(modal);
+        if (document.getElementById("myonoffswitch").checked == false)
+            legend.addTo(mymap);
       }
     }
 
