@@ -73,7 +73,7 @@ Pum Nahara;31.8285;44.3897;R. Kahana?;Am
 Basra;30.502;47.8153;R. Yirmiyah Rabbah;Am
 Mahoza;33.1;44.58333;Rava, R. Nachman bar Yitzchak;Am
 Tushpa;38.4996;43.3461;Rabbah Tosafaah;Am
-Baghdad;33.3401;44.3904;Sherira Gaon, Hai Gaon, Ben Ish Hai;M
+Baghdad;33.3401;44.3904;Sherira Gaon, Hai Gaon, Ben Ish Hai, Abdallah Somech, Kaf haChaim;M
 Kairouan;35.6787;10.103;Chushiel ben Elchanan, Rabbeinu Hananel, Nissim Gaon;R
 Granada;37.179;-3.5961;Shmuel haNagid;R
 Fustat/Cairo;30.0078;31.24;Shemariah ben Elhanan, Rambam, Radbaz, Eliezer ben Elijah Ashkenazi;M
@@ -161,10 +161,10 @@ Montecchio Maggiore;45.5024;11.4133;Judah Messer Leon;R
 Adrianople;41.6757;26.5593;Abraham ben Solomon Treves;R
 Izmir;38.4189;27.1325;Solomon Nissim Algazi, Chaim Benveniste;Ah
 Thessaloniki;40.6335;22.9515;Lechem Mishneh, Meam Loez, Ein Yaakov;Ah
-Istanbul;41.0151;28.9519;Joshua Benveniste, Mishneh LaMelech;Ah
+Istanbul;41.0151;28.9519;Joshua Benveniste, Mishneh LaMelech, Eliyahu Mizrahi;Ah
 Belgrade;44.8175;20.4577;Joseph Almosnino;Ah
 Budapest;47.4914;19.0535;Chacham Tzvi;Ah
-Sale, Morocco;34.033;-6.8;Or haHaim, Raphael Ankawa;Ah
+Sale;34.033;-6.8;Or haHaim, Raphael Ankawa;Ah
 Livorno;43.5523;10.3109;Hida, Pri Hadash;Ah
 Medzhybizh;49.4333;27.4166;Baal Shem Tov;H
 Mosul;36.3424;43.1297;Asenath Barzani;Ah
@@ -179,13 +179,15 @@ Krakow;50.0634;19.9381;Remah, Beer Heitev, Bach;Ah
 Avlona;40.467;19.483;David ben Judah Messer Leon;R
 Mikulov;48.8055;16.63777;Maharal;Ah
 Poznan;52.4077;16.9356;Maharal;Ah
-Padua;45.4062;11.8774;Ramchal;Ah
+Padua;45.4062;11.8774;Ramchal, Shadal;Ah
 Lublin;51.2482;22.5674;Maharshal, Maharam (Lublin), Hozeh meLublin, Tzadok haKohen;M
 Ostroh;50.3282;26.5215;Maharsha, Taz;Ah
 Ohrid;41.1187;20.8045;Judah Leon Mosconi;R
 Ein Zeitun;32.987;35.492;Moshe ben Machir;Ah
 Mantua;45.1576;10.7945;Minchat Shai;Ah
-Damascus;33.5113;36.3115;Josiah Pinto;Ah
+Damascus;33.5113;36.3115;Josiah Pinto, Ezra Hacohen Trab;Ah
+Aleppo;36.2005;37.1608;Tzedakah Hotzin, Yitzhak Shreim, Abraham Entebbe;Ah
+Dupnica;42.2645;23.1164 ;Avraham Alkalai;Ah
 Sharab;13.7831;43.8858;Shalom Sharabi;Ah
 Karlsruhe;49.0033;8.4018;Korban Netanel;Ah
 Frankfurt;50.1144;8.6853;Nathan Adler, Shimshon Refael Hirsch;Ah
@@ -256,7 +258,15 @@ Sarajevo;43.8590;18.4301;Yehudah Alkalai;Ah
 Cambridge;52.2052;0.11916;Binyamin of Cambridge;R
 Casablanca;33.5898;-7.6274;Shalom Messas;Ah
 Tlemcen;34.8811;-1.3238;Joseph Messas;Ah
-Tripoli;32.8943;13.1765;Eliyahu Bechor Hazan;Ah
+Tripoli;32.8943;13.1765;Shimon Lavi, Eliyahu Bechor Hazan;Ah
+Herat;34.34194;62.203;Mattityah Garji;Ah
 Tafilalt;31.2843;-4.2637;Yaakov Abuhatzeira;Ah
 Netivot;31.4257;34.5934;Baba Sali;Ah
 Rotterdam;51.9212;4.4801;Josiah Pardo;Ah
+Beirut;33.8977;35.5043;Yaakov Yosef haKohen Tarab;Ah
+Nice;43.7034;7.2663 ;Abraham Belaish;Ah
+Rosetta;31.40444;30.416389;Abraham Halevi;Ah
+Shiraz;29.6092;52.5476;Rahamim Melamed haKohen;Ah
+Amadiah;37.0919;43.4879;Allwan Shimon Avidani;Ah
+Aden;12.7843;45.0220;Mehalel haAdani;Ah
+Djerba;33.7735;10.8951;Shalom Daniel Yehuda Cohen;Ah
