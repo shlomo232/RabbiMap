@@ -84,7 +84,7 @@ Soria, Spain;41.766667;-2.466667;Yosef Albo;R
 Girona;41.98429;2.82499;Ramban;R
 Perpignan;42.6986;2.8956;Meiri;R
 Barcelona;41.3848;2.178;Ran, Rashba, R Crescas, Raah, Rivash;R
-Lunel, France;43.67448;4.13562;Baal Hamaor, ibn Tibbon;R
+Lunel;43.67448;4.13562;Baal Hamaor, ibn Tibbon;R
 Marseilles;43.3005;5.3725;ibn Tibbon;R
 Calatayud;41.35355;-1.64264;Rivash;R
 Palma de Majorca;39.5684;2.6521;Tashbetz;R
@@ -165,7 +165,7 @@ Belgrade;44.8175;20.4577;Joseph Almosnino;Ah
 Budapest;47.4914;19.0535;Chacham Tzvi;Ah
 Sale, Morocco;34.033;-6.8;Or haHaim;Ah
 Livorno;43.5523;10.3109;Hida, Pri Hadash;Ah
-Medzhybizh;49.4333;27.4166;Baal Shem Tov;Ah
+Medzhybizh;49.4333;27.4166;Baal Shem Tov;H
 Mosul;36.3424;43.1297;Asenath Barzani;Ah
 Chelm;51.1333;23.4833;Eliyahu Baal Shem of Chelm;Ah
 Eisenstadt;47.85;16.517;Panim Meirot, Imrei Esh;Ah
@@ -179,7 +179,7 @@ Avlona;40.467;19.483;David ben Judah Messer Leon;R
 Mikulov;48.8055;16.63777;Maharal;Ah
 Poznan;52.4077;16.9356;Maharal;Ah
 Padua;45.4062;11.8774;Ramchal;Ah
-Lublin;51.2482;22.5674;Maharshal, Maharam (Lublin), Hozeh meLublin, Tzadok haKohen;Ah
+Lublin;51.2482;22.5674;Maharshal, Maharam (Lublin), Hozeh meLublin, Tzadok haKohen;M
 Ostroh;50.3282;26.5215;Maharsha, Taz;Ah
 Ohrid;41.1187;20.8045;Judah Leon Mosconi;R
 Ein Zeitun;32.987;35.492;Moshe ben Machir;Ah
@@ -190,11 +190,11 @@ Karlsruhe;49.0033;8.4018;Korban Netanel;Ah
 Frankfurt;50.1144;8.6853;Nathan Adler, Shimshon Refael Hirsch;Ah
 Ternopil;49.5666;25.6;Minchat Chinuch;Ah
 Meknes;33.8974;-5.5663;Raphael Berdugo;Ah
-Baltimore;39.2904;-76.6119;Avraham Rice, Yaakov Ruderman, Yaakov Kamenetsky;Ah
+Baltimore;39.2904;-76.6119;Avraham Rice, Yaakov Ruderman;Ah
 Bykhov;53.51666;30.25;David Luria;Ah
 Edgemere;40.5961;-73.7685;Charles Chavel;Ah
 Wurzburg;49.7941;9.9329;Avraham Bing;Ah
-New York;40.7547;-73.9859;Moshe Feinstein, Yitzchak Hutner, Menachem Mendel Schneerson;Ah
+New York;40.7547;-73.9859;Moshe Feinstein, Yitzchak Hutner, Menachem Mendel Schneerson, Yaakov Kamenetzky;M
 Lakewood;40.0949;-74.2147;Aharon Kotler;Ah
 Ungvar;48.624;22.295;Kitzur Shulchan Aruch;Ah
 Vilna;54.6808;25.2873;Vilna Gaon, Isaac Elijah Landau, Chaim Ozer Grodinski, Rashash;Ah
@@ -223,23 +223,23 @@ Radun;54.048;24.996;Chofetz Chaim;Ah
 Brisk;52.135;23.657;Beis haLevi, Chaim Brisker;Ah
 Boston;42.3343;-71.1212;Joseph Dov Soloveitchik;Ah
 Bielsk Podlaski;52.767;23.2;Yefeh Einayim;Ah
-Mezrich;50.657;26.864;Maggid of Mezrich;Ah
-Hanipol;50.454;26.895;Zusha;Ah
-Lizhensk;50.267;22.417;Noam Elimelech;Ah
-Kotzk;51.65;22.45;Kotzker Rebbe;Ah
-Bratslav;48.815;28.944;Nachman meBreslov;Ah
-Piasetzno;52.067;21.017;Kalonymus Kalman Shapira, Simcha Bunim;Ah
-Ger;51.983;21.233;Ger Hassidim;Ah
-Berdichev;49.9;28.567;Levi Yitzchak of Berdichev;Ah
-Liadi;54.6;31.167;Shneur Zalman (Tanya);Ah
-Karlin;52.237;25.842;Aharon of Karlin;Ah
-Satmar;47.79;22.89;Satmar Hassidim;Ah
-Lubavitch;54.833;30.967;Lubavitcher Hassidim;Ah
-Amshinov;51.974;20.527;Amshinover Hassidim;Ah
-Modzitz;51.567;21.861;Modzitz Hassidim;Ah
-Izhbitza;50.883;23.167;Mei haShiloach;Ah
-Radzyn Podlaski;51.767;22.617;Radzyner Hassidim;Ah
-Bobov;49.7;20.933;Bobov Hassidim;Ah
+Mezrich;50.657;26.864;Maggid of Mezrich;H
+Hanipol;50.454;26.895;Zusha;H
+Lizhensk;50.267;22.417;Noam Elimelech;H
+Kotzk;51.65;22.45;Kotzker Rebbe;H
+Bratslav;48.815;28.944;Nachman meBreslov;H
+Piasetzno;52.067;21.017;Kalonymus Kalman Shapira, Simcha Bunim;H
+Ger;51.983;21.233;Ger Hassidim;H
+Berdichev;49.9;28.567;Levi Yitzchak of Berdichev;H
+Liadi;54.6;31.167;Shneur Zalman (Tanya);H
+Karlin;52.237;25.842;Aharon of Karlin;H
+Satmar;47.79;22.89;Satmar Hassidim;H
+Lubavitch;54.833;30.967;Lubavitcher Hassidim;H
+Amshinov;51.974;20.527;Amshinover Hassidim;H
+Modzitz;51.567;21.861;Modzitz Hassidim;H
+Izhbitza;50.883;23.167;Mei haShiloach;H
+Radzyn Podlaski;51.767;22.617;Radzyner Hassidim;H
+Bobov;49.7;20.933;Bobov Hassidim;H
 Alon Shevut;31.6559;35.1264;Aharon Lichtenstein;Ah
 Bnei Brak;32.0866;34.8374;Chazon Ish, Elazar Shach, Shmuel Wosner, Chaim Kanievsky;Ah
 Beer Yaakov;31.9439;34.8405;Shlomo Wolbe;Ah
@@ -250,3 +250,6 @@ Yavoriv;49.947;23.393;Metzudot;Ah
 Pinsk;52.117;26.1;Torah Temimah;Ah
 Sanaa;15.3554;44.2142;Yihyah Kafih;Ah
 Taiz;13.578889;44.02194;Shalom Shabazi;Ah
+Suvalk;54.1;22.933;Dovid Lifshitz;Ah
+Sarajevo;43.8590;18.4301;Yehudah Alkalai;Ah
+Cambridge;52.2052;0.11916;Binyamin of Cambridge;R

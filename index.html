@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- TODO:
-Make labels wrap intelligently
-Make "about" dialog scroll not overflow
+Base map in all english
+Add more Sephardi rabbis
+Make labels wrap more intelligently
 -->
 <html>
 <head>
@@ -87,6 +88,7 @@ Make "about" dialog scroll not overflow
             else if (dataImport[i].Era=='Am') circletext='<div class="circle cAm"></div>'
             else if (dataImport[i].Era=='R') circletext='<div class="circle cR"></div>'
             else if (dataImport[i].Era=='Ah') circletext='<div class="circle cAh"></div>'
+            else if (dataImport[i].Era=='H') circletext='<div class="circle cH"></div>'
             else circletext='<div class="circle cM"></div>'
 
             var popuptext='<div class=popup>'+dataImport[i].Place+": "+dataImport[i].Names+'</div>';
@@ -167,7 +169,7 @@ Make "about" dialog scroll not overflow
     var legend = L.control({position: 'bottomright'});
     legend.onAdd = function (mymap) {
         var div = L.DomUtil.create('div', 'info legend');
-        div.innerHTML ='<div class="circle cB inline"></div>&nbsp;Biblical<p><div class="circle cT inline"></div>&nbsp;Tannaim<p><div class="circle cAm inline"></div>&nbsp;Amoraim<p><div class="circle cR inline"></div>&nbsp;Rishonim/geonim<p><div class="circle cAh inline"></div>&nbsp;Achronim<p><div class="circle cM inline"></div>&nbsp;Multiple eras';
+        div.innerHTML ='<div class="circle cB inline"></div>&nbsp;Biblical<p><div class="circle cT inline"></div>&nbsp;Tannaim<p><div class="circle cAm inline"></div>&nbsp;Amoraim<p><div class="circle cR inline"></div>&nbsp;Rishonim/geonim<p><div class="circle cAh inline"></div>&nbsp;Achronim<p><div class="circle cH inline"></div>&nbsp;Hassidim<p><div class="circle cM inline"></div>&nbsp;Multiple eras';
         return div;
     };
 
