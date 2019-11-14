@@ -64,7 +64,7 @@ Haifa;32.82874;34.98653;Avdimi demin Haifa, Yechiel of Paris;M
 Katzrin;32.98869;35.70451;R. Avin;Am
 Nawa;32.8909;36.0416;R. Tanhuma;Am
 Nehardea;33.37861;43.7158;Shmuel, R. Simlai, Shela, Rabbah bar Avuha, Nahman, Sheshet, Amemar;Am
-Sura;31.88333;44.45;Rav, Rabbah bar Rav Huna, R. Ashi, Ravina (I & II), Yeimar. Yehudai Gaon, Natronai Gaon, Amram Gaon, Samuel ben Hofni;M
+Sura;31.88333;44.45;Rav, Rabbah bar Rav Huna, R. Ashi, Ravina (I & II), Yeimar. Yehudai Gaon, Natronai Gaon, Amram Gaon, Saadiah Gaon, Samuel ben Hofni;M
 Kafri;31.8045;44.4509;Mar Ukva, R. Chisda;Am
 Tikrit;34.6038;43.6904;R. Huna;Am
 Pumbedita;33.35;43.7833;R. Yehudah, Adda bar Ahava, Rabbah, Yosef, Abaye, Zevid, Mar Zutra;Am
@@ -84,24 +84,24 @@ Lucena;37.40896;-4.48459;Ri Migash, Ibn Ghiyat;R
 Soria, Spain;41.766667;-2.466667;Yosef Albo;R
 Girona;41.98429;2.82499;Ramban;R
 Perpignan;42.6986;2.8956;Meiri;R
-Barcelona;41.3848;2.178;Ran, Rashba, R Crescas, Raah, Rivash;R
+Barcelona;41.3848;2.178;Ran, Rashba, R Crescas, Raah, Rivash, Nimmukei Yosef;R
 Lunel;43.67448;4.13562;Baal Hamaor, ibn Tibbon;R
 Marseilles;43.3005;5.3725;ibn Tibbon;R
 Calatayud;41.35355;-1.64264;Rivash;R
-Palma de Majorca;39.5684;2.6521;Tashbetz;R
+Palma de Majorca;39.5684;2.6521;Tashbetz, Orchot Chaim;R
 Algiers;36.7848;3.0615;Rivash, Tashbetz;R
 Toulouse;43.6037;1.4442;Maggid Mishneh;R
 Posquieres;43.6942;4.2769;Raavad;R
 Avignon;43.9478;4.8097;Ralbag;R
 Narbonne;43.1838;3.0031;Radak, Isaac of Narbonne, Orchot Chaim, Sefer haEshkol;R
-Troyes;48.2958;4.0741;Rashi;R
+Troyes;48.2958;4.0741;Rashi, Yosef Kara;R
 Ramerupt;48.5193;4.2929;Rabbeinu Tam, Rashbam;R
 Mainz;50.0001;8.2719;Rabbeinu Gershom, Yereim, Raaviyah, Raavan, Maharil;R
 Dampierre;48.5512;4.36784;Ri haZaken;R
 Paris;48.8538;2.3464;Yechiel of Paris;R
 Coucy;49.5057;4.4578;Semag;R
 Tours;47.3945;0.6831;Rabbeinu Peretz;R
-Orleans;47.9006;1.9095;Jacob of Orleans;R
+Orleans;47.9006;1.9095;Bechor Shor, Jacob of Orleans;R
 Falaise;49.3792;4.73;Chaim Paltiel;R
 Chinon;47.1669;0.2405;Samson of Chinon;R
 Touques;49.3433;0.1028;Eliezer of Touques;R
@@ -175,7 +175,7 @@ Kalisz;51.767;18.0833;Magen Avraham;Ah
 Volozhin;54.0843;26.5278;Shaagat Aryeh, Netziv, Chaim Volozhin, Chaim Brisker;Ah
 Metz;49.1168;6.1773;Shaagat Aryeh;Ah
 Sofia;42.6954;23.3231;Yosef Ibn Ezra;Ah
-Krakow;50.0634;19.9381;Remah, Beer Heitev, Bach;Ah
+Krakow;50.0634;19.9381;Remah, Beer Heitev, Bach, Yosef Engel;Ah
 Avlona;40.467;19.483;David ben Judah Messer Leon;R
 Mikulov;48.8055;16.63777;Maharal;Ah
 Poznan;52.4077;16.9356;Maharal;Ah
@@ -200,7 +200,7 @@ Wurzburg;49.7941;9.9329;Avraham Bing;Ah
 New York;40.7547;-73.9859;Moshe Feinstein, Yitzchak Hutner, Menachem Mendel Schneerson, Yaakov Kamenetzky;M
 Lakewood;40.0949;-74.2147;Aharon Kotler;Ah
 Ungvar;48.624;22.295;Kitzur Shulchan Aruch;Ah
-Vilna;54.6808;25.2873;Vilna Gaon, Isaac Elijah Landau, Chaim Ozer Grodinski, Rashash;Ah
+Vilna;54.6808;25.2873;Shach, Vilna Gaon, Chaim Ozer Grodinski, Rashash, Chayei Adam, Beer haGolah;Ah
 Stryi;49.25;23.85;Ketzot haHoshen;Ah
 Dubno;50.393;25.735;Dubner Maggid;Ah
 Torun;53.022;18.611;Tzvi Hirsch Kalischer;Ah
@@ -232,7 +232,7 @@ Lizhensk;50.267;22.417;Noam Elimelech;H
 Kotzk;51.65;22.45;Kotzker Rebbe;H
 Bratslav;48.815;28.944;Nachman meBreslov;H
 Piasetzno;52.067;21.017;Kalonymus Kalman Shapira, Simcha Bunim;H
-Ger;51.983;21.233;Ger Hassidim;H
+Ger;51.983;21.233;Ger Hassidim, Sefat Emet;H
 Berdichev;49.9;28.567;Levi Yitzchak of Berdichev;H
 Liadi;54.6;31.167;Shneur Zalman (Tanya);H
 Karlin;52.237;25.842;Aharon of Karlin;H
@@ -272,3 +272,15 @@ Aden;12.7843;45.0220;Mehalel haAdani;Ah
 Djerba;33.7735;10.8951;Shalom Daniel Yehuda Cohen;Ah
 Alexandrov;51.8167;19.3;Yerachmiel Danzyger;H
 Moises Ville;-30.71666;-61.48333;Aharon Halevi Goldman;Ah
+Kastoria;40.52;21.26;Lekach Tov;R
+Verona;45.4457;11.0005;Eliezer ben Samuel of Verona;R
+Trieste;45.6494;13.7692;Hoil Moshe;Ah
+Bonn;50.733;7.1;Ephraim of Bonn;R
+Beaugency;47.7792;1.6325 ;Eliezer of Beaugency;R
+Seville;37.39;-5.99;Abudirham;R
+Tortosa;40.8127;0.5233;Maharam Halawa;R
+Zamora;41.4988;-5.7555;Akeidat Yitzchak;R
+Aghmat;31.4225;-7.8011;Zechariah Aghmati;R
+Utena;55.5;25.6;Pitchei Teshuvah;Ah
+Brody;50.083141;25.14765;Shlomo Kluger, Beit Efraim;Ah
+Shydlow;50.5911;21.004;Beit Shmuel;Ah
