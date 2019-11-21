@@ -164,6 +164,7 @@ Make labels wrap more intelligently
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		id: 'mapbox.streets'
 	}).addTo(mymap);
+    L.control.scale({imperial: false}).addTo(mymap);
 
     var legend = L.control({position: 'bottomright'});
     legend.onAdd = function (mymap) {
